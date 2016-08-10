@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A72050711D5A893A00C5BC83 /* secondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72050701D5A893A00C5BC83 /* secondPageViewController.swift */; };
+		A72050731D5AA74700C5BC83 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72050721D5AA74700C5BC83 /* MainPageViewController.swift */; };
 		A7A67ACD1D5510960092FC0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A67ACC1D5510960092FC0E /* AppDelegate.swift */; };
-		A7A67ACF1D5510960092FC0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A67ACE1D5510960092FC0E /* ViewController.swift */; };
 		A7A67AD21D5510970092FC0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A67AD01D5510970092FC0E /* Main.storyboard */; };
 		A7A67AD41D5510970092FC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A67AD31D5510970092FC0E /* Assets.xcassets */; };
 		A7A67AD71D5510970092FC0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A67AD51D5510970092FC0E /* LaunchScreen.storyboard */; };
+		A7F31A541D59082200DA5C13 /* firstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31A531D59082200DA5C13 /* firstPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A72050701D5A893A00C5BC83 /* secondPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondPageViewController.swift; sourceTree = "<group>"; };
+		A72050721D5AA74700C5BC83 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		A7A67AC91D5510960092FC0E /* NutritionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A67ACC1D5510960092FC0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7A67ACE1D5510960092FC0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7A67AD11D5510970092FC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7A67AD31D5510970092FC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7A67AD61D5510970092FC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7A67AD81D5510970092FC0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F31A531D59082200DA5C13 /* firstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				A7A67ACC1D5510960092FC0E /* AppDelegate.swift */,
-				A7A67ACE1D5510960092FC0E /* ViewController.swift */,
+				A7F31A531D59082200DA5C13 /* firstPageViewController.swift */,
+				A72050701D5A893A00C5BC83 /* secondPageViewController.swift */,
+				A72050721D5AA74700C5BC83 /* MainPageViewController.swift */,
 				A7A67AD01D5510970092FC0E /* Main.storyboard */,
 				A7A67AD31D5510970092FC0E /* Assets.xcassets */,
 				A7A67AD51D5510970092FC0E /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A67ACF1D5510960092FC0E /* ViewController.swift in Sources */,
+				A72050731D5AA74700C5BC83 /* MainPageViewController.swift in Sources */,
+				A72050711D5A893A00C5BC83 /* secondPageViewController.swift in Sources */,
+				A7F31A541D59082200DA5C13 /* firstPageViewController.swift in Sources */,
 				A7A67ACD1D5510960092FC0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,7 @@
 				A7A67ADD1D5510970092FC0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

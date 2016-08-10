@@ -10,8 +10,25 @@ import UIKit
 
 class firstPageViewController: UIViewController {
 
+    
+    @IBOutlet weak var currentDate: UILabel!
+    
+    @IBOutlet weak var waterTodayLabel: UILabel!
+    
+    @IBOutlet weak var calTodayLabel: UILabel!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
+        let convertedDate = dateFormatter.stringFromDate(NSDate())
+        
+        
+        currentDate.text = String("\(convertedDate)")
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +38,12 @@ class firstPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func addAction(sender: AnyObject) {
+        
+    }
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        
+    }
     /*
     // MARK: - Navigation
 
