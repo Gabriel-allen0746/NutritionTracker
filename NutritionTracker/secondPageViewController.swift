@@ -9,6 +9,7 @@
 import UIKit
 
 class secondPageViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    @IBOutlet weak var searchBar: UISearchBar!
 
     @IBOutlet weak var waterAmountTextField: UITextField!
     @IBOutlet weak var waterPicker: UIPickerView!
@@ -22,6 +23,10 @@ class secondPageViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBAction func eatButton(sender: AnyObject) {
     }
     
+    var calories: Int = 0
+    
+    
+    
     var foodPickerData: [String] = [String]()
     var waterPickerData: [String] = [String]()
 
@@ -34,9 +39,9 @@ class secondPageViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.waterPicker.delegate = self
         self.waterPicker.dataSource = self
         
-        foodPickerData = ["Servings", "Grams", "Ounces", "Pounds"]
+        foodPickerData = ["Servings", "Grams", "Ounces", "Cups"]
         
-        waterPickerData = ["Cups", "Litres", "Gallons"]
+        waterPickerData = ["Millilitires","Ounces", "Cups"]
         // Do any additional setup after loading the view.
     }
 
@@ -53,12 +58,24 @@ class secondPageViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     // The number of rows of data
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return foodPickerData.count
+        if pickerView == foodPicker {
+            return foodPickerData.count
+        }
+        else if pickerView == waterPicker {
+            return waterPickerData.count
+        }
+        return 0
     }
     
     // The data to return for the row and component (column) that's being passed in
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return foodPickerData[row]
+        if pickerView == foodPicker {
+            return foodPickerData[row]
+        }
+        else if pickerView == waterPicker {
+            return waterPickerData[row]
+        }
+        return ""
     }
 
     /*

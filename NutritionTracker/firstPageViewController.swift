@@ -16,7 +16,9 @@ class firstPageViewController: UIViewController {
     @IBOutlet weak var waterTodayLabel: UILabel!
     
     @IBOutlet weak var calTodayLabel: UILabel!
-
+    
+    public var calTotal: Int = 0
+    public var waterTotal: Double = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +29,14 @@ class firstPageViewController: UIViewController {
         dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
         let convertedDate = dateFormatter.stringFromDate(NSDate())
         
-        
         currentDate.text = String("\(convertedDate)")
 
         // Do any additional setup after loading the view.
+        
+        calTodayLabel.text = "\(calTotal)"
+        waterTodayLabel.text = "\(waterTotal) ml"
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
